@@ -8,7 +8,6 @@ def test_login_selenium():
     driver.get("http://127.0.0.1:5000/") 
     username_field = driver.find_element(By.NAME, 'username')
     password_field = driver.find_element(By.NAME, 'password')
-    
     username_field.send_keys('user')
     password_field.send_keys('password')
     password_field.send_keys(Keys.RETURN)
